@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ToDoList from "./ToDoList";
 
 const App=() =>{
 
@@ -28,7 +29,7 @@ const App=() =>{
                 <ol>
                     {Items.map( 
                         (itemval)=> {
-                            return (<li>{itemval}</li>);
+                           return( <ToDoList text ={itemval}/> )
                         }
                      )}
                 </ol>
